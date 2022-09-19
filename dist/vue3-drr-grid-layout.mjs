@@ -4561,7 +4561,7 @@ const $a = (e) => !isNaN(e), Na = (e) => {
     },
     i: {
       required: !0,
-      type: Number
+      type: void 0
     },
     isDraggable: {
       required: !0,

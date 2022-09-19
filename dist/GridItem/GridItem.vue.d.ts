@@ -18,7 +18,7 @@ declare const _default: import("vue").DefineComponent<{}, {
         };
         i: {
             required: true;
-            type: NumberConstructor;
+            type: import("vue").PropType<string | number>;
         };
         isDraggable: {
             required: true;

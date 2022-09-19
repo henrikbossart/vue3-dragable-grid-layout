@@ -54,7 +54,8 @@ const props = defineProps({
   },
   i: {
     required: true,
-    type: Number
+    type: undefined as unknown as PropType<number|string>
+    // type: Number
   },
   isDraggable: {
     required: true,
@@ -515,7 +516,7 @@ defineExpose({
   // tryMakeDraggable,
   // tryMakeResizable
   calcXY,
-  
+
 })
 </script>
 

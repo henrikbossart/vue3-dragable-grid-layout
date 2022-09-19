@@ -107,7 +107,7 @@ export const getFirstCollision = (layout: Layout, layoutItem: LayoutItem): Layou
   }
 }
 
-export const getLayoutItem = (layout: Layout, id: string): LayoutItem => layout.filter(l => l.i === +id)[0]
+export const getLayoutItem = (layout: Layout, id: string | number): LayoutItem => layout.filter(l => l.i === +id)[0]
 
 export const getStatics = (layout: Layout): LayoutItem[] => layout.filter(l => l.static)
 
