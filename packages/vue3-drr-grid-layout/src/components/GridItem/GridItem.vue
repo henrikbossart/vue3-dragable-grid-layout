@@ -23,6 +23,8 @@ import { GridItemClasses, GridItemPosition, Inner } from '../../types/components
 import {
   PropType,
   computed,
+  defineEmits,
+  defineExpose,
   inject,
   onBeforeUnmount,
   onMounted,
@@ -503,6 +505,15 @@ onMounted(() => {
 
   tryMakeDraggable()
   createStyle()
+})
+
+// Expose
+defineExpose({
+  createStyle,
+  handleDrag,
+  handleResize,
+  tryMakeDraggable,
+  tryMakeResizable
 })
 </script>
 
