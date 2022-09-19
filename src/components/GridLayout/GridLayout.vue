@@ -523,7 +523,8 @@ onMounted(() => {
 
 // expose
 defineExpose({
-  dragEvent
+  dragEvent,
+  layoutUpdate
 })
 </script>
 

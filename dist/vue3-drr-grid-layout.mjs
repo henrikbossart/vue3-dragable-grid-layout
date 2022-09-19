@@ -5862,7 +5862,8 @@ const Vo = () => typeof window < "u", lc = (e, t) => {
         });
       });
     }), t({
-      dragEvent: J
+      dragEvent: J,
+      layoutUpdate: p
     }), (S, $) => (Yt(), ue("div", null, [
       ai("div", {
         ref_key: "wrapper",
