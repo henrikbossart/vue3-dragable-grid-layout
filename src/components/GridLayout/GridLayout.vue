@@ -286,7 +286,7 @@ const layoutItemOptional = (props: { [key: string]: any }) => {
     }, {})
 }
 
-const layoutUpdate = (): void => {
+function layoutUpdate(): void {
   if (props.layout && originalLayout.value) {
     if (props.layout.length !== originalLayout.value.length) {
       const diff = findDifference(props.layout, originalLayout.value)

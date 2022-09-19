@@ -93,7 +93,7 @@ declare const _default: import("vue").DefineComponent<{}, {
     }>>;
     layoutKeys: any;
     validator: any;
-    emit: (event: "update:layout" | "layout-ready" | "update:breakpoint" | "layout-created" | "layout-before-mount" | "layout-mounted" | "container-resized" | "item-resize" | "item-resized" | "item-move" | "item-moved" | "intersection-observe" | "intersection-unobserve", ...args: any[]) => void;
+    emit: (event: "container-resized" | "update:layout" | "layout-ready" | "update:breakpoint" | "layout-created" | "layout-before-mount" | "layout-mounted" | "item-resize" | "item-resized" | "item-move" | "item-moved" | "intersection-observe" | "intersection-unobserve", ...args: any[]) => void;
     emitter: any;
     layoutItemRequired: {
         h: number;
@@ -140,7 +140,6 @@ declare const _default: import("vue").DefineComponent<{}, {
         [key: string]: any;
     }) => {};
     requiredKeys: any;
-    layoutUpdate: () => void;
     diff: any;
     findDifference: (layout: Layout, originalLayout: Layout) => Layout;
     uniqueResultOne: any;

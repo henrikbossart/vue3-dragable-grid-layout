@@ -5779,7 +5779,8 @@ const Vo = () => typeof window < "u", lc = (e, t) => {
     }, y = (S) => {
       const $ = Object.keys(r);
       return Object.keys(S).reduce((b, O) => ((s.includes(O) || $.includes(O)) && (b[O] = S[O]), b), {});
-    }, p = () => {
+    };
+    function p() {
       if (o.layout && m.value) {
         if (o.layout.length !== m.value.length) {
           const S = A(o.layout, m.value);
@@ -5787,7 +5788,8 @@ const Vo = () => typeof window < "u", lc = (e, t) => {
         }
         qt(o.layout, o.verticalCompact), H(), n("update:layout", o.layout), i.emit("recalculate-styles");
       }
-    }, A = (S, $) => {
+    }
+    const A = (S, $) => {
       const b = S.filter((N) => !$.some((L) => N.i === L.i)), O = $.filter((N) => !S.some((L) => N.i === L.i));
       return b.concat(O);
     }, x = () => {
