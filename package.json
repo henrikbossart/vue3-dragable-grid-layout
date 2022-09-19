@@ -31,7 +31,6 @@
     "vue-eslint-parser": "^9.0.3"
   },
   "dependencies": {
-    "lerna": "^5.4.0",
-    "vue": "^3.2.39"
+    "lerna": "^5.4.0"
   }
 }
