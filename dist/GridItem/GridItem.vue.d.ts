@@ -88,7 +88,7 @@ declare const _default: import("vue").DefineComponent<{}, {
             type: NumberConstructor;
         };
     }>>;
-    emit: (event: "resize" | "move" | "container-resized" | "resized" | "moved" | "drag-event" | "resize-event", ...args: any[]) => void;
+    emit: (event: "resize" | "move" | "container-resized" | "moved" | "resize-event" | "drag-event" | "resized", ...args: any[]) => void;
     item: import("vue").Ref<HTMLDivElement>;
     emitter: unknown;
     resizableHandleClass: string;
