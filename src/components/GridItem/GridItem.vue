@@ -510,13 +510,8 @@ onMounted(() => {
 
 // Expose
 defineExpose({
-  // createStyle,
-  // handleDrag,
-  // handleResize,
-  // tryMakeDraggable,
-  // tryMakeResizable
+  item,
   calcXY,
-
 })
 </script>
 
